@@ -12,6 +12,7 @@ require "oauth_user_info_api.rb"
 require "oauth_domain_groups_api.rb"
 require "oauth_offline_api.rb"
 require "oauth_error.rb"
+require "version"
 
 module OauthDoorman
 end
