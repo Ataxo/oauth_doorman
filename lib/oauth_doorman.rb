@@ -6,12 +6,12 @@ require 'active_support/core_ext/hash/indifferent_access'
 require 'json'
 require 'httpclient'
 
-require "oauth_sender.rb"
-require "oauth_receiver.rb"
-require "oauth_user_info_api.rb"
-require "oauth_domain_groups_api.rb"
-require "oauth_offline_api.rb"
-require "oauth_error.rb"
+require "oauth_sender"
+require "oauth_receiver"
+require "oauth_user_info_api"
+require "oauth_domain_groups_api"
+require "oauth_offline_api"
+require "oauth_error"
 require "version"
 
 module OauthDoorman
