@@ -42,11 +42,8 @@ module OauthDoorman
       end
     end
 
-    def self.get_user_email_from_xml(all_group_members_xml)
-      regex = /<apps:property name=\'memberId\' value=\'(.*?)\'\/>/m
-      user_emails = all_group_members_xml.scan(regex).flatten
-
-      return user_emails
+    def self.get_user_email_from_xml(xml_doc)
+      Nokogiri::XML(xml_doc).xpath('//apps:property[@name="memberId"]').map { |x| x["value"] }
     end
 
     def self.waint_until_thread_finished(shared_result, timeout)
