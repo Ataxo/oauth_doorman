@@ -26,4 +26,10 @@ Gem::Specification.new do |s|
   s.add_dependency('httpclient', '~> 2.2.5')
   s.add_dependency('json', '~> 1.7.3')
   s.add_dependency('activesupport', '~> 3.2.0')
+
+  s.add_development_dependency('shoulda', '~> 3.1.1')
+  s.add_development_dependency('turn', '~> 0.9.6')
+#  s.add_development_dependency('fakeweb', '~> 1.3')
+#  s.add_development_dependency('mocha', '~> 0.10')
+
 end
