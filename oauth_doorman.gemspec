@@ -12,10 +12,18 @@ Gem::Specification.new do |s|
   s.description     = "composes authentification url, gets google acces_token of user account and gets access to user Google API"
   s.summary         = "google 3rd party authentification"
 
-  s.files           = `git ls-files`.split($\)
+  s.files           = [
+                        "lib/oauth_doorman.rb",
+                        "lib/oauth_sender.rb",
+                        "lib/api/oauth_access_api.rb",
+                        "lib/api/oauth_error.rb",
+                        "lib/api/oauth_user_info_api.rb",
+                        "lib/api/oauth_domain_groups_api.rb"
+                      ]
+
   s.executables     = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-  s.test_files      = s.files.grep(%r{^(test|spec|features)/})
-  s.require_paths   = ["lib"]
+  s.test_files      = s.files.grep(%r{^(test|api/test)/})
+  s.require_paths   = ["lib", "lib/api"]
 
   s.has_rdoc        = true
   s.rdoc_options << '--title' << 'Rake -- Ruby Make' <<
@@ -24,9 +32,9 @@ Gem::Specification.new do |s|
 
   s.add_dependency('rake', '~> 0.9.2')
   s.add_dependency('httpclient', '~> 2.2.5')
-  s.add_dependency('json', '~> 1.7.3')
-  s.add_dependency('nokogiri', '~> 1.5.5')
+  s.add_dependency('json_pure')
   s.add_dependency('activesupport', '~> 3.2.0')
+  s.add_dependency('nokogiri')
 
   s.add_development_dependency('shoulda', '~> 3.1.1')
   s.add_development_dependency('turn', '~> 0.9.6')
@@ -34,3 +42,4 @@ Gem::Specification.new do |s|
 #  s.add_development_dependency('mocha', '~> 0.10')
 
 end
+

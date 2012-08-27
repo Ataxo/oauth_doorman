@@ -14,16 +14,16 @@ include Rake::DSL
 namespace :test do
   Rake::TestTask.new(:unit) do |test|
     test.libs << %w{ lib test }
-    test.pattern = 'test/unit/*_test.rb'
+    test.pattern = 'test/*_test.rb'
     test.verbose = true
   end
-  
-  Rake::TestTask.new(:integration) do |test|
+
+  Rake::TestTask.new(:unit_api) do |test|
     test.libs << %w{ lib test }
-    test.pattern = 'test/integration/*_test.rb'
+    test.pattern = 'test/api/*_test.rb'
     test.verbose = true
   end
   
   desc "Run all tests, including integration tests"
-  task :all => [ :unit, :integration ]
+  task :all => [ :unit, :unit_api ]
 end
