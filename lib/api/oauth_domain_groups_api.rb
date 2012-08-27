@@ -9,7 +9,7 @@ module OauthDoorman
       result = nil
 
       begin
-        url =  "https://apps-apis.google.com/a/feeds/group/2.0/#{domain}/?member=#{current_user}"
+        url = config[:groups_info_url] % [domain, current_user]
 
         http = HTTPClient.new
         result = http.get(url, :header => {config[:groups_info_auth_header_name] => config[:groups_info_auth_header_content] % [access_token]}).body
