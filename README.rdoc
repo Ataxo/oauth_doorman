@@ -18,7 +18,7 @@ default keys:: - :scopes => ["https://www.googleapis.com/auth/userinfo.email", "
                - :response_type => "code",
                - :state => "ATAXO",
                - :user_info_url => "https://www.googleapis.com/oauth2/v1/userinfo",
-               - :groups_info_url => "https://apps-apis.google.com/a/feeds/group/2.0/%s/%s/member",
+               - :groups_info_url => "https://apps-apis.google.com/a/feeds/group/2.0/%s/?member=%s",
                - :groups_info_auth_header_name => "Authorization",
                - :groups_info_auth_header_content => "OAuth %s",
                - :groups_info_request_timeout => 5
