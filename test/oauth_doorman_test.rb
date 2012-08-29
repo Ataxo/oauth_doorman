@@ -1,5 +1,6 @@
+# -*- encoding : utf-8 -*-
+
 require 'test_helper'
-require File.join(File.dirname(__FILE__), '..', 'lib', 'oauth_doorman')
 
 class OauthDoorman_Test < Test::Unit::TestCase
   context "*new instance" do

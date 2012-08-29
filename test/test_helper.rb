@@ -4,3 +4,5 @@ require 'rubygems'
 require 'test/unit'
 require 'shoulda'
 require 'turn'
+
+require 'oauth_doorman'

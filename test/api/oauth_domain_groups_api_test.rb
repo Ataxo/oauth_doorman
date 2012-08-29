@@ -1,6 +1,6 @@
-require File.join(File.dirname(__FILE__), '..', 'test_helper.rb')
-require File.join(File.dirname(__FILE__), '..', '..', 'lib/api', 'oauth_domain_groups_api')
-require File.join(File.dirname(__FILE__), '..', '..', 'lib', 'oauth_doorman')
+# -*- encoding : utf-8 -*-
+
+require 'test_helper'
 
 class OauthDomainGroupsApi_Test < Test::Unit::TestCase
   include OauthDoorman::DomainGroupsAPI
