@@ -1,3 +1,5 @@
+# -*- encoding : utf-8 -*-
+
 module OauthDoorman
   module OauthSender
     #force_refresh_token flag for refresh_token enforcement

@@ -1,3 +1,5 @@
+# -*- encoding : utf-8 -*-
+
 module Error
   def is_error(request_result)
     error_regex = /error/

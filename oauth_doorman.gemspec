@@ -14,16 +14,17 @@ Gem::Specification.new do |s|
 
   s.files           = [
                         "lib/oauth_doorman.rb",
-                        "lib/oauth_sender.rb",
-                        "lib/api/oauth_access_api.rb",
-                        "lib/api/oauth_error.rb",
-                        "lib/api/oauth_user_info_api.rb",
-                        "lib/api/oauth_domain_groups_api.rb"
+                        "lib/oauth_doorman/oauth_sender.rb",
+                        "lib/oauth_doorman/oauth_access_api.rb",
+                        "lib/oauth_doorman/oauth_error.rb",
+                        "lib/oauth_doorman/oauth_user_info_api.rb",
+                        "lib/oauth_doorman/oauth_domain_groups_api.rb",
+                        "lib/oauth_doorman/sinatra.rb",
                       ]
 
   s.executables     = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   s.test_files      = s.files.grep(%r{^(test|api/test)/})
-  s.require_paths   = ["lib", "lib/api"]
+  s.require_paths   = ["lib", "lib/oauth_doorman"]
 
   s.has_rdoc        = true
   s.rdoc_options << '--title' << 'Rake -- Ruby Make' <<

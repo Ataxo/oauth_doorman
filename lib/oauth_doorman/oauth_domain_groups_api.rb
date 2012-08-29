@@ -1,4 +1,5 @@
-require "oauth_error"
+# -*- encoding : utf-8 -*-
+
 require "nokogiri"
 
 module OauthDoorman

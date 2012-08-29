@@ -10,10 +10,11 @@ require 'httpclient'
 
 require 'rubygems'
 
-require "oauth_sender.rb"
-require "api/oauth_access_api"
-require "api/oauth_user_info_api"
-require "oauth_domain_groups_api"
+require "oauth_doorman/oauth_sender"
+require "oauth_doorman/oauth_error"
+require "oauth_doorman/oauth_access_api"
+require "oauth_doorman/oauth_user_info_api"
+require "oauth_doorman/oauth_domain_groups_api"
 
 module OauthDoorman 
   class Api

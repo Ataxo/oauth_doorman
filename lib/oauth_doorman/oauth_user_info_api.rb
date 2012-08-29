@@ -1,4 +1,4 @@
-require "oauth_error"
+# -*- encoding : utf-8 -*-
 
 module OauthDoorman
   module UserInfoAPI

@@ -1,4 +1,4 @@
-require "oauth_error"
+# -*- encoding : utf-8 -*-
 
 module OauthDoorman
   module AccessAPI
@@ -49,7 +49,7 @@ module OauthDoorman
 
         http = HTTPClient.new
         result = http.post(config[:token_url], hash_params).body
-
+        
         process_error(result)
       rescue Exception => exception
         raise exception
