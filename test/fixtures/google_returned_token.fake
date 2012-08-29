@@ -1,0 +1,7 @@
+{
+  "access_token" : "ya29.AHES6ZQSzZ7RiwuYztGsj5MWu1234567890765432",
+  "token_type" : "Bearer",
+  "expires_in" : 3600,
+  "id_token" : "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiY2lkIjoiNDA3NDA4NzE4MTkyLmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiZW1haWwiOiJvbmRyZWouYmFydGFzQGF0YXhvLmNvbSIsImF1ZCI6IjQwNzQwODcxODE5Mi5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInRva2VuX2hhc2giOiJ4b0t1cnNvdnBzc2JJTmdEMnZmZVhnIiwiaGQiOiJhdGF4by5jb20iLCJ2ZXJpZmllZF9lbWFpbCI6InRydWUiLCJpYXQiOjEzNDYyNTA2MjAsImV4cCI6MTM0NjI1NDUyMH0.FTqfGa5QuCi5RoL4lDFdMQtFoHq8cz8Xa7ZBm5J_BbFohXxfrdkfOPf072iSkAJz4xP04DHNblr-qvCNrDCopM1kqohNwtMGTDOZlYCn3t6BA_n9yYQuiKX49Zc-Un48QY0uWccTg9r3UTQcqUxaVtq439Dseg2xT8Db5xnUYjI",
+  "refresh_token" : "1/E_fpUpo7A3960JcK-1234567890"
+}
