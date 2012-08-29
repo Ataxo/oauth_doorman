@@ -37,8 +37,12 @@ Gem::Specification.new do |s|
   s.add_dependency('nokogiri')
 
   s.add_development_dependency('shoulda', '~> 3.1.1')
+  s.add_development_dependency('shoulda-context')
   s.add_development_dependency('turn', '~> 0.9.6')
-#  s.add_development_dependency('fakeweb', '~> 1.3')
+  s.add_development_dependency('rack-test')
+  s.add_development_dependency('webmock')
+  s.add_development_dependency('shotgun')
+  s.add_development_dependency('sinatra')
 #  s.add_development_dependency('mocha', '~> 0.10')
 
 end
