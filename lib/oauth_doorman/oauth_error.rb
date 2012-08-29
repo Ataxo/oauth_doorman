@@ -7,14 +7,18 @@ module Error
   end
 
   def process_error(request_result)
-    error_regex = /error/
-
+    
     if request_result == nil
       raise "nil response content"
     end
 
-    if(error_regex.match(request_result))
-      raise request_result
+    begin 
+      json = JSON.parse(request_result)
+      if json.has_key?("error")
+        raise json
+      end
+    rescue 
+      false
     end
   end
 end
