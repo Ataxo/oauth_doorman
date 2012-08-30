@@ -1,9 +1,9 @@
 #!/usr/bin/env rake
 
-# omitting, we won't release this gem to public
-# require "bundler/gem_tasks"
-
 task :default => :test
+
+require 'bundler'
+Bundler::GemHelper.install_tasks
 
 desc "Run tests by default"
 task :test => 'test:all'
