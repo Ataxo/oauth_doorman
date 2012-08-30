@@ -1,24 +1,22 @@
 # -*- encoding : utf-8 -*-
+class OauthError < Exception; end
 
-module Error
-  def is_error(request_result)
-    error_regex = /error/
-    return error_regex.match(request_result)
-  end
-
-  def process_error(request_result)
-    
-    if request_result == nil
-      raise "nil response content"
+module OauthDoorman
+  module Error
+    def is_error(request_result)
+      error_regex = /error/
+      return error_regex.match(request_result)
     end
 
-    begin 
-      json = JSON.parse(request_result)
-      if json.has_key?("error")
-        raise json
+    def process_error(request_result)
+      
+      if request_result == nil
+        raise OauthError, "nil response content"
       end
-    rescue 
-      false
+
+      json = JSON.parse(request_result) rescue nil
+      raise OauthError, json if json && json.has_key?("error")
+
     end
   end
 end
