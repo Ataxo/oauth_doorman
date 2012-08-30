@@ -34,7 +34,7 @@ Gem::Specification.new do |s|
   s.add_dependency('rake', '~> 0.9.2')
   s.add_dependency('httpclient', '~> 2.2.5')
   s.add_dependency('json_pure')
-  s.add_dependency('activesupport', '~> 3.2.0')
+  s.add_dependency('activesupport', '~> 3.0')
   s.add_dependency('nokogiri')
 
   s.add_development_dependency('shoulda', '~> 3.1.1')
